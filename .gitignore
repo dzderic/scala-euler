@@ -1,3 +1,5 @@
 /.ensime*
 /project/
 /target/
+.sbtopts
+.*.swp

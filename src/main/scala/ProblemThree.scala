@@ -13,7 +13,7 @@ object ProblemThree {
     if (n <= 1) return List()
     val end = n / 2
   
-    val factors = numbers.takeWhile(_ < end).filter(n % _ == 0).take(1).toList
+    val factors = numbers.takeWhile(_ <= end).filter(n % _ == 0).take(1).toList
     factors.headOption match {
       case None => List(n)
       case Some(factor) => primeFactors(factor) ::: primeFactors(n / factor)
